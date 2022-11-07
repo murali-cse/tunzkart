@@ -39,9 +39,12 @@
 </head>
 
 <style>
-.btn-cart:hover span {
+/* product screen button style */
+.product-details-action>.btn-cart:hover span {
     color: #fff;
 }
+
+.cat-block:hover img {}
 </style>
 
 <body>

@@ -22,28 +22,28 @@ class Welcome extends CI_Controller {
 	{
 		$category = [
 			[
-				'image'=> 'assets/images/demos/demo-4/cats/1.png',
-				'title' => 'Computer & Laptop'
+				'image'=> 'assets/images/products/cat1.png',
+				'title' => 'Ethnic Wear'
 			],
 			[
-				'image'=> 'assets/images/demos/demo-4/cats/2.png',
-				'title' => 'Digital Cameras'
+				'image'=> 'assets/images/products/cat2.png',
+				'title' => 'Activewear'
 			],
 			[
-				'image'=> 'assets/images/demos/demo-4/cats/3.png',
-				'title' => 'Smart Phones'
+				'image'=> 'assets/images/products/cat7.png',
+				'title' => 'Sportswear'
 			],
 			[
-				'image'=> 'assets/images/demos/demo-4/cats/4.png',
-				'title' => 'Televisions'
+				'image'=> 'assets/images/products/cat4.png',
+				'title' => 'Kidswear'
 			],
 			[
-				'image'=> 'assets/images/demos/demo-4/cats/5.png',
-				'title' => 'Audio'
+				'image'=> 'assets/images/products/cat5.png',
+				'title' => 'Workwear'
 			],
 			[
-				'image'=> 'assets/images/demos/demo-4/cats/6.png',
-				'title' => 'Smart Watches'
+				'image'=> 'assets/images/products/cat6.png',
+				'title' => 'Casualwear'
 			],
 		];
 
@@ -112,11 +112,104 @@ class Welcome extends CI_Controller {
 				'device' => 'mobile'
 			]
 		];
+		
+		$recommended = [
+			[
+				'image'=>'assets/images/products/allensolly-1.png',
+				'category' => 'Men',
+				'name'=> 'Allen Solly',
+				'original_price'=> '1000',
+				'discount_price'=>'800',
+				'rating'=> '50%',
+				'review' => '4',
+				'colors'=> ['#666666','#ff887f','#6699cc','#f3dbc1', '#eaeaec'],
+				'sale' => false
+			],
+			[
+				'image'=> 'assets/images/products/louisphillipe-1.png',
+				'category' => 'Men',
+				'name'=> 'Louis Philippe Sport',
+				'original_price'=> '1000',
+				'discount_price'=>'0',
+				'rating'=> '50%',
+				'review' => '4',
+				'colors'=> [],
+				'sale' => false
+			],
+			[
+				'image'=> 'assets/images/products/saree_mall-1.png',
+				'category' => 'Women',
+				'name'=> 'Saree Mall',
+				'original_price'=> '1000',
+				'discount_price'=>'999',
+				'rating'=> '50%',
+				'review' => '4',
+				'colors'=> [],
+				'sale' => true
+			],
+			[
+				'image'=> 'assets/images/products/sangria-1.png',
+				'category' => 'Women',
+				'name'=> 'Saree Mall',
+				'original_price'=> '1000',
+				'discount_price'=>'999',
+				'rating'=> '50%',
+				'review' => '4',
+				'colors'=> [],
+				'sale' => true
+			],
+			[
+				'image'=> 'assets/images/products/louisphillipe-1.png',
+				'category' => 'Men',
+				'name'=> 'Louis Philippe Sport',
+				'original_price'=> '1000',
+				'discount_price'=>'0',
+				'rating'=> '50%',
+				'review' => '4',
+				'colors'=> [],
+				'sale' => true
+			],
+			[
+				'image'=> 'assets/images/products/saree_mall-1.png',
+				'category' => 'Women',
+				'name'=> 'Saree Mall',
+				'original_price'=> '1000',
+				'discount_price'=>'999',
+				'rating'=> '50%',
+				'review' => '4',
+				'colors'=> [],
+				'sale' => true
+			],
+			[
+				'image'=> 'assets/images/products/sangria-1.png',
+				'category' => 'Women',
+				'name'=> 'Saree Mall',
+				'original_price'=> '1000',
+				'discount_price'=>'999',
+				'rating'=> '50%',
+				'review' => '4',
+				'colors'=> [],
+				'sale' => false
+			],
+			[
+				'image'=>'assets/images/products/allensolly-1.png',
+				'category' => 'Men',
+				'name'=> 'Allen Solly',
+				'original_price'=> '1000',
+				'discount_price'=>'800',
+				'rating'=> '50%',
+				'review' => '4',
+				'colors'=> ['#666666','#ff887f','#6699cc','#f3dbc1', '#eaeaec'],
+				'sale' => true
+			],
+
+		];
 
 		$data = [
 			'categories' => $category,
 			'newarrival' => $newarrival,
 			'banners' => $banners,
+			'recommended'=> $recommended,
 		];
 
 		$footer = [
