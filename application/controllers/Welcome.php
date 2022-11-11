@@ -205,11 +205,18 @@ class Welcome extends CI_Controller {
 
 		];
 
+		$portraitBanner = [
+			'image' => 'assets/images/demos/demo-4/banners/banner-4.jpg',
+			'redirect_id' => '1',
+			'show_ad' => true
+		];
+
 		$data = [
 			'categories' => $category,
 			'newarrival' => $newarrival,
 			'banners' => $banners,
 			'recommended'=> $recommended,
+			'portrait_banner' => $portraitBanner,
 		];
 
 		$footer = [
